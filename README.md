@@ -1,2 +1,2 @@
 # Chic3n
-This is the main repo
+This is the main repo for the Food Recommender
