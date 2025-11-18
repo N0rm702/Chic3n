@@ -3,48 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chic3n Chatbot</title>
+  <title>Chic3n — Your Smart Chatbot</title>
 
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background: #f3f3f3;
+      color: #333;
     }
 
     header {
-      background: #2c2c2c;
-      color: #fff;
+      background: #222;
       padding: 18px;
       text-align: center;
+      color: #fff;
       font-size: 22px;
       letter-spacing: 1px;
     }
 
-    .content {
-      max-width: 800px;
+    .container {
+      max-width: 850px;
       margin: 50px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      padding: 25px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.15);
     }
 
-    .content h2 {
+    h2 {
       margin-top: 0;
-      color: #222;
+      font-size: 26px;
+      color: #1a1a1a;
     }
 
-    .content p {
-      line-height: 1.6;
-      font-size: 16px;
-      color: #444;
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 20px;
     }
 
     footer {
-      text-align: center;
       margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
       padding: 15px;
       color: #555;
     }
@@ -53,23 +55,25 @@
 
 <body>
 
-  <header>
-    Welcome to Chic3n & PuffC0rn Chatbot
-  </header>
+  <header>Chic3n — Your Friendly Assistant</header>
 
-  <div class="content">
-    <h2>Your Friendly Help Bot</h2>
+  <div class="container">
+    <h2>Welcome to Chic3n</h2>
     <p>
-      This chatbot is designed to help you with studies, coding doubts, tech explanations, and everyday questions.
-      Just tap the chat icon on the bottom-right corner and start talking to your assistant.
-      It works 24/7 and tries to explain things simply — like a friendly senior guiding you.
+      Chic3n is your smart, friendly chatbot built to help you with your studies, coding doubts,
+      technology explanations, and everyday questions. It's designed to reply in simple, easy-to-understand
+      language so that learning feels smooth and stress-free.
+    </p>
+
+    <p>
+      Whenever you're ready, tap the chat icon on the bottom-right corner and start talking to Chic3n.
+      It’s always awake, always ready, and always happy to help—just like a helpful friend.
     </p>
   </div>
 
-  <footer>
-    © 2025 Your Project Name — Built with love :)
-  </footer>
+  <footer>© 2025 Chic3n Project — Created with care 🐣</footer>
 
+  <!-- Chic3n Chatbot Script -->
   <script>
     window.watsonAssistantChatOptions = {
       integrationID: "91eedf53-8ef5-4b2d-98dd-03badfab91e3",
@@ -78,14 +82,6 @@
       onLoad: async (instance) => { await instance.render(); }
     };
 
-    setTimeout(function(){
+    setTimeout(function() {
       const t = document.createElement('script');
-      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/"
-              + (window.watsonAssistantChatOptions.clientVersion || 'latest')
-              + "/WatsonAssistantChatEntry.js";
-      document.head.appendChild(t);
-    });
-  </script>
-
-</body>
-</html>
+      t.src = "https://web-chat.global.assistant.watson.appdomai
